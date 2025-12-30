@@ -1,6 +1,7 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navList = document.querySelector('.nav-list');
 const links = document.querySelectorAll('.nav-list a');
+const backToTop = document.querySelector('#back-to-top');
 
 navToggle?.addEventListener('click', () => {
   navList.classList.toggle('open');
@@ -64,6 +65,17 @@ document.addEventListener('click', evt => {
   document.querySelectorAll('.fund-actions.open').forEach(actions => {
     if (!actions.contains(evt.target)) actions.classList.remove('open');
   });
+});
+
+// Back to top visibility
+window.addEventListener('scroll', () => {
+  if (!backToTop) return;
+  const show = window.scrollY > 380;
+  backToTop.classList.toggle('show', show);
+});
+
+backToTop?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
 form?.addEventListener('submit', evt => {
