@@ -337,8 +337,9 @@ img {
 
 .office-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 420px));
+  gap: 18px;
+  justify-content: start;
 }
 
 .office-card {
