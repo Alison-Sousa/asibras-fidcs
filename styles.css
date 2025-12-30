@@ -251,8 +251,11 @@ img {
 
 .fund-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 18px;
+  max-width: 960px;
+  width: 100%;
+  margin: 0;
 }
 
 .fund-card {
@@ -306,7 +309,51 @@ img {
 .fund-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 12px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.doc-label {
+  font-weight: 700;
+  color: var(--gold);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.doc-arrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  transition: transform 0.15s ease;
+}
+
+.doc-row {
+  display: none;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fund-actions.open .doc-row {
+  display: flex;
+}
+
+.fund-actions.open .doc-arrow {
+  transform: rotate(180deg);
+}
+
+.btn.doc {
+  background: var(--white);
+  color: var(--logo-navy);
+  border: 1px solid transparent;
+  min-width: 140px;
+  box-shadow: none;
+}
+
+.btn.doc:hover {
+  border-color: rgba(199, 164, 65, 0.4);
+  color: var(--gold);
 }
 
 .value-grid {
