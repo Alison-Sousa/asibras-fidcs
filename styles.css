@@ -40,44 +40,24 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 16px 7vw;
-  background: rgba(11, 37, 69, 0.92);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(199, 164, 65, 0.3);
+  background: #0b223c;
+  border-bottom: 1px solid rgba(199, 164, 65, 0.18);
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0;
 }
 
-.brand-mark {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  border: 1.5px solid var(--gold);
-  color: var(--gold);
-  display: grid;
-  place-items: center;
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+.brand-logo {
+  height: 78px;
+  width: auto;
+  display: block;
 }
 
 .brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.brand-name {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.brand-sub {
-  font-size: 0.85rem;
-  color: var(--muted);
+  display: none !important;
 }
 
 .nav {
