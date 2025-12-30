@@ -204,6 +204,11 @@ img {
   max-width: 900px;
 }
 
+.paragraph.note {
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
 .cards .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
